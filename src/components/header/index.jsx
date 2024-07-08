@@ -1,61 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5";
+import { STRINGS } from "../../constants/strings";
 
 import {
   StyledHeader,
+  StyledLogoDiv,
   StyledLogo,
-  StyledNavItems,
+  StyledNavItemsDiv,
   StyledItem,
-  StyledSearchBarDiv,
+  StyledSearchIcon,
   StyledBroadcastDiv,
   StyledAuthButton,
   StyledNewBadge,
+  StyledHeaderBody,
+  StyledSearchAndAuthDiv,
+  StyledSearchInput,
+  StyledSearchContainer,
+  StyledAcademyItem,
+  StyledAcademyItemDiv,
+  StyledBroadcastAndAuthDiv,
+  StyledHamburger,
 } from "./header.styled";
 import Logo from "../../assets/header/logo.svg";
 import BroadcastIcon from "../../assets/header/broadcast-icon.svg";
 
 const Header = () => {
+  const [isHover, setIsHover] = useState(false);
+
   return (
     <StyledHeader>
-      <div
-        style={{
-          width: "55%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <StyledLogo src={Logo} alt="logo" />
-        <StyledNavItems>
-          <StyledItem>Compass</StyledItem>
-          <StyledItem>Explore</StyledItem>
-          <StyledItem >
-            <div>Academy</div>
-            <StyledNewBadge>New</StyledNewBadge>
-          </StyledItem>
-          <StyledItem>NFTs</StyledItem>
-          <StyledItem>For Projects</StyledItem>
-        </StyledNavItems>
-      </div>
-      <div
-        style={{
-          display: "flex",
-          width: "45%",
-          gap: "3%",
-          marginLeft: "1%",
-          marginRight: "2.5%",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <StyledSearchBarDiv>
-          <IoSearch style={{ height: "16px", width: "16px" }} />
-        </StyledSearchBarDiv>
-        <StyledBroadcastDiv>
-          <img src={BroadcastIcon} alt="broadcast-icon" />
-        </StyledBroadcastDiv>
-        <StyledAuthButton>Sign In</StyledAuthButton>
-      </div>
+      <StyledHeaderBody>
+        <div style={{display: 'flex', alignItems: 'center'}}>
+          <StyledLogoDiv>
+            <StyledLogo src={Logo} alt="logo" />
+          </StyledLogoDiv>
+          <StyledNavItemsDiv>
+            <StyledItem>{STRINGS.COMPASS}</StyledItem>
+            <StyledItem>{STRINGS.EXPLORE}</StyledItem>
+            <StyledAcademyItem>
+              <StyledAcademyItemDiv>{STRINGS.ACADEMEY}</StyledAcademyItemDiv>
+              <StyledNewBadge>{STRINGS.NEW}</StyledNewBadge>
+            </StyledAcademyItem>
+            <StyledItem>{STRINGS.NFTS}</StyledItem>
+            <StyledItem>{STRINGS.FOR_PROJECTS}</StyledItem>
+          </StyledNavItemsDiv>
+        </div>
+        <div>
+          <StyledSearchAndAuthDiv>
+            <StyledSearchContainer>
+              <StyledSearchIcon />
+              <StyledSearchInput placeholder={STRINGS.SEARCH_PLACEHOLDER} />
+            </StyledSearchContainer>
+            <StyledBroadcastAndAuthDiv>
+              <StyledBroadcastDiv>
+                <img src={BroadcastIcon} alt="broadcast-icon" />
+              </StyledBroadcastDiv>
+              <StyledAuthButton>{STRINGS.SIGN_IN}</StyledAuthButton>
+              <StyledHamburger />
+            </StyledBroadcastAndAuthDiv>
+          </StyledSearchAndAuthDiv>
+        </div>
+      </StyledHeaderBody>
     </StyledHeader>
   );
 };
