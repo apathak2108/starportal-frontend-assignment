@@ -13,6 +13,7 @@ import {
   StyledTabSwitcher,
   StyledTabS1,
   StyledTabS2,
+  StyledImageDiv,
 } from "./homeContainer.styled";
 import RightArrow from "../../assets/body/right-arrow.svg";
 import { STRINGS } from "../../constants/strings";
@@ -20,7 +21,9 @@ import { STRINGS } from "../../constants/strings";
 const HomeContainer = () => {
   return (
     <StyledMainContainer>
-      <StyledBgImage src={MainBgImage} alt="background-image" />
+      <StyledImageDiv>
+        <StyledBgImage src={MainBgImage} alt="background-image" />
+      </StyledImageDiv>
       <StyledHomeCenterDiv>
         <div>
           <StyledAcademyLogo src={AcademyLogo} alt="academy-animated-logo" />

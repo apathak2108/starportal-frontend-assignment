@@ -1,8 +1,13 @@
 import styled from "styled-components";
 
 export const StyledBgImage = styled.img`
+  width: 100%;
+`;
+
+export const StyledImageDiv = styled.div`
+  position: relative;
   top: 64px;
-  width: -webkit-fill-available;
+  width: 100%;
 `;
 
 export const StyledMainContainer = styled.div`
@@ -10,6 +15,7 @@ export const StyledMainContainer = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
 `;
 
 export const StyledHomeCenterDiv = styled.div`
@@ -25,6 +31,10 @@ export const StyledAcademyLogo = styled.img`
   width: 235px;
   mix-blend-mode: screen;
   z-index: 1;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 150px;
+  }
 `;
 
 export const StyledAcademyInfoDiv = styled.div`
@@ -48,6 +58,12 @@ export const StyledText = styled.p`
   text-align: center;
   margin: 0;
   margin-top: 5px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    font-size: 14px;
+    margin-top: 2px;
+    line-height: 16px;
+  }
 `;
 
 export const StyledAcademyButton = styled.div`
@@ -66,6 +82,13 @@ export const StyledAcademyButton = styled.div`
   cursor: pointer;
   overflow: hidden;
   transition: all 0.3s ease;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+
+    margin-top: 30px;
+    padding: 5px 30px;
+    opacity: 0.8;
+    }
 `;
 
 export const StyledTabSwitcher = styled.div`
@@ -76,13 +99,13 @@ export const StyledTabSwitcher = styled.div`
   backdrop-filter: blur(10px);
   width: max-content;
   display: flex;
-  position: fixed;
-  z-index: 2000;
+  position: absolute;
+  z-index: 1000;
   bottom: 10%;
 `;
 
 export const StyledTabS1 = styled.div`
-  display:flex;
+  display: flex;
   justify-content: center;
   padding: 12px 30px;
   border-radius: 1000px;

@@ -13,5 +13,6 @@ export const STRINGS = {
   ACADEMY_TEXT_1: "have together made more than ",
   ACADEMY_TEXT_2: "in web3.",
   ACADEMY_TEXT_3: "Join them and ",
-  GET_STARTED: "Get Started"
+  GET_STARTED: "Get Started",
+  FOOTER_TEXT_1: "We are your personal guide for exploring web3 projects & earning 100x rewards"
 };
