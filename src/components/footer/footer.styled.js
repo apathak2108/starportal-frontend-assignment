@@ -6,8 +6,9 @@ export const StyledFooterContainer = styled.footer`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   z-index: 1;
+  margin-top: 100px;
 `;
 
 export const StyledFooterInnerContainer = styled.main`
@@ -15,6 +16,14 @@ export const StyledFooterInnerContainer = styled.main`
   margin-right: auto;
   padding: 28px 10px;
   max-width: 1284px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 25px;
+
+  @media (min-width: 360px) and (max-width: 1284px) {
+    margin-left: 30px;
+  }
 `;
 
 export const StyledFooterContentOne = styled.section`
@@ -23,24 +32,95 @@ export const StyledFooterContentOne = styled.section`
   align-items: flex-start;
   padding-top: 1.5rem;
   padding-right: 120px;
+  gap: 60px;
+  width: 90%;
+
+  @media (min-width: 360px) and (max-width: 1284px) {
+    flex-flow: column;
+  }
 `;
 
 export const ContentOneDivOne = styled.div`
   display: flex;
   align-items: flex-start;
   flex-flow: column;
+  gap: 20px;
+
+  @media (min-width: 360px) and (max-width: 1284px) {
+    flex-flow: column;
+  }
 `;
 
-export const ContentOneDivTwo = styled.div``;
+export const ContentOneDivTwo = styled.div`
+  display: flex;
+  gap: 50px;
 
-export const DivTwoSpanOne = styled.span``;
+  @media (min-width: 360px) and (max-width: 1284px) {
+    gap: 100px;
+  }
+`;
 
-export const DivTwoSpanTwo = styled.span``;
+export const DivTwoSpan = styled.span`
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  gap: 13px;
+  color: #7d7d7d;
+`;
 
-export const DivTwoSpanThree = styled.span``;
+export const StyledFooterContentTwo = styled.section`
+  color: #7d7d7d;
 
-export const DivTwoSpanFour = styled.span``;
+  @media (min-width: 360px) and (max-width: 1284px) {
+    width: 85%;
+  }
+`;
 
-export const StyledFooterContentTwo = styled.section``;
+export const StyledFooterContentThree = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-export const StyledFooterContentThree = styled.section``;
+  @media (min-width: 360px) and (max-width: 1284px) {
+    align-items: flex-start;
+    flex-flow: column;
+    gap: 20px;
+  }
+`;
+
+export const StyledBoldText = styled.span`
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+`;
+
+export const StyledIconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+`;
+
+export const StyledIconDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+`;
+
+export const StyledDivTwoSpanContainer = styled.div`
+  display: flex;
+  gap: 50px;
+
+  @media (min-width: 360px) and (max-width: 1284px) {
+    flex-flow: column;
+    gap: 40px;
+  }
+`;
