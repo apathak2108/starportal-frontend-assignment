@@ -39,6 +39,7 @@ export const StyledLogoDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
 
   @media (min-width: 360px) and (max-width: 768px) {
     margin-left: 0px;
@@ -61,6 +62,7 @@ export const StyledNavItemsDiv = styled.div`
   gap: 1rem;
   margin-left: 40px;
   height: 100%;
+  position: relative;
 `;
 
 export const StyledSearchAndAuthDiv = styled.div`
@@ -69,20 +71,6 @@ export const StyledSearchAndAuthDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
-
-export const StyledSearchContainer = styled.div`
-  display: flex;
-  width: 20%;
-  padding: 10px 16px;
-  align-items: center;
-  flex: 1;
-  gap: 0.5rem;
-  position: relative;
-
-  @media (min-width: 360px) and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const StyledItem = styled.span`
@@ -122,6 +110,19 @@ export const StyledSearchIcon = styled(IoSearch)`
   position: absolute;
   color: #fff6;
   left: 25px;
+`;
+
+export const StyledSearchContainer = styled.div`
+  display: flex;
+  padding: 10px 16px;
+  align-items: center;
+  flex: 1;
+  gap: 0.5rem;
+  position: relative;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const StyledSearchInput = styled.input`
