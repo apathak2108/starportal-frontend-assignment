@@ -8,7 +8,6 @@ export const StyledFooterContainer = styled.footer`
   justify-content: center;
   align-items: flex-end;
   z-index: 1;
-  margin-top: 100px;
 `;
 
 export const StyledFooterInnerContainer = styled.main`
@@ -122,5 +121,12 @@ export const StyledDivTwoSpanContainer = styled.div`
   @media (min-width: 360px) and (max-width: 1284px) {
     flex-flow: column;
     gap: 40px;
+  }
+`;
+
+export const StyledSpan = styled.span`
+  &:hover {
+    color: #fff;
+    cursor: pointer;
   }
 `;

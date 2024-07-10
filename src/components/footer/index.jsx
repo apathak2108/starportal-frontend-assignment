@@ -12,6 +12,7 @@ import {
   StyledIconDiv,
   StyledDivTwoSpanContainer,
   StyledIconsContainer,
+  StyledSpan,
 } from "./footer.styled";
 import Logo from "../../assets/header/logo.svg";
 import { STRINGS } from "../../constants/strings";
@@ -37,33 +38,33 @@ const Footer = () => {
             <StyledDivTwoSpanContainer>
               <DivTwoSpan>
                 <StyledBoldText>INTRACT</StyledBoldText>
-                <span>Explore Quests</span>
-                <span>Communities</span>
-                <span>Alpha Hub</span>
+                <StyledSpan>Explore Quests</StyledSpan>
+                <StyledSpan>Communities</StyledSpan>
+                <StyledSpan>Alpha Hub</StyledSpan>
               </DivTwoSpan>
               <DivTwoSpan>
                 <StyledBoldText>ABOUT</StyledBoldText>
-                <span>Product Roadmap</span>
-                <span>Affiliate Program</span>
-                <span>Sign Up Program</span>
-                <span>Growth Community</span>
-                <span>Blogs</span>
+                <StyledSpan>Product Roadmap</StyledSpan>
+                <StyledSpan>Affiliate Program</StyledSpan>
+                <StyledSpan>Sign Up Program</StyledSpan>
+                <StyledSpan>Growth Community</StyledSpan>
+                <StyledSpan>Blogs</StyledSpan>
               </DivTwoSpan>
             </StyledDivTwoSpanContainer>
             <StyledDivTwoSpanContainer>
               <DivTwoSpan>
                 <StyledBoldText>EARN</StyledBoldText>
-                <span>Refer & Earn</span>
-                <span>Leaderbord</span>
-                <span>Achievements</span>
+                <StyledSpan>Refer & Earn</StyledSpan>
+                <StyledSpan>Leaderbord</StyledSpan>
+                <StyledSpan>Achievements</StyledSpan>
               </DivTwoSpan>
               <DivTwoSpan>
                 <StyledBoldText>SUPPORT</StyledBoldText>
-                <span>Help Center</span>
-                <span>Create your quest</span>
-                <span>Terms of Service</span>
-                <span>Privacy Policy</span>
-                <span>Community Guidelines</span>
+                <StyledSpan>Help Center</StyledSpan>
+                <StyledSpan>Create your quest</StyledSpan>
+                <StyledSpan>Terms of Service</StyledSpan>
+                <StyledSpan>Privacy Policy</StyledSpan>
+                <StyledSpan>Community Guidelines</StyledSpan>
               </DivTwoSpan>
             </StyledDivTwoSpanContainer>
           </ContentOneDivTwo>

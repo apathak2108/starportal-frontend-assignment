@@ -84,11 +84,10 @@ export const StyledAcademyButton = styled.div`
   transition: all 0.3s ease;
 
   @media (min-width: 360px) and (max-width: 768px) {
-
     margin-top: 30px;
     padding: 5px 30px;
     opacity: 0.8;
-    }
+  }
 `;
 
 export const StyledTabSwitcher = styled.div`
@@ -99,7 +98,7 @@ export const StyledTabSwitcher = styled.div`
   backdrop-filter: blur(10px);
   width: max-content;
   display: flex;
-  position: absolute;
+  position: sticky;
   z-index: 1000;
   bottom: 10%;
 `;
@@ -136,3 +135,11 @@ export const StyledTabS2 = styled.div`
   color: #fff6;
   transition: color 0.5s ease;
 `;
+
+export const StyledDivider = styled.section`
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 1000;
+`;
+
