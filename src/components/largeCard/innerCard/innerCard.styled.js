@@ -12,6 +12,12 @@ export const StyledInnerCardContainer = styled.section`
   align-items: center;
   gap: 16px;
   cursor: pointer;
+  position: relative;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    width: 100%;
+  }
+
 `;
 
 export const StyledInnerDivOne = styled.div`
@@ -29,6 +35,7 @@ export const StyledInnerDivTwo = styled.div`
 export const StyledImage = styled.img`
   height: 100%;
   width: 100%;
+  border-radius: 12px;
 `;
 
 export const StyledDivTwoUpper = styled.div`
@@ -72,4 +79,32 @@ export const StyledDivTwoBottomTwo = styled.span`
   flex-shrink: 0;
   overflow: hidden;
   position: relative;
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    width: 160px;
+    height: 12px;
+
+  }  
+`;
+
+export const StyledTickDiv = styled.div`
+  display: flex;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  padding: 4px;
+  bottom: 10px;
+  right: 6px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 1000px;
+  border: 1px solid var(--White-10, rgba(255, 255, 255, 0.1));
+  background: var(--White-05, rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  color: #fff3;
+
+    @media (min-width: 360px) and (max-width: 768px) {
+    display: none;
+  }
 `;

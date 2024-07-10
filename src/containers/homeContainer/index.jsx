@@ -19,12 +19,13 @@ import RightArrow from "../../assets/body/right-arrow.svg";
 import { STRINGS } from "../../constants/strings";
 import VideoCardContainer from "../videoCardContainer";
 import CryptoDicContainer from "../cryptoDicContainer";
-import LargeCard from "../../components/largeCard";
+import LargeAndSmallCardsContainer from "../largeAndSmallCardContainer";
+
 
 const HomeContainer = () => {
   return (
     <>
-      <div style={{ position: "relative", display: 'flex', flexFlow: 'column', alignItems: 'center' }}>
+      <div style={{ position: "relative", display: 'flex', flexFlow: 'column', alignItems: 'center', justifyContent: "center", width: '100%' }}>
         <StyledMainContainer>
           <StyledImageDiv>
             <StyledBgImage src={MainBgImage} alt="background-image" />
@@ -57,7 +58,11 @@ const HomeContainer = () => {
           </StyledHomeCenterDiv>
         </StyledMainContainer>
         <hr
-          style={{ width: "100%", opacity: "0.1", margin: "20px 0 20px 0" }}
+          style={{ width: "100%", opacity: "0.1", margin: "20px 0 60px 0" }}
+        />
+        <LargeAndSmallCardsContainer />
+        <hr
+          style={{ width: "100%", opacity: "0.1", margin: "60px 0 20px 0" }}
         />
         <VideoCardContainer />
         <hr
@@ -72,7 +77,6 @@ const HomeContainer = () => {
           style={{ width: "100%", opacity: "0.1", margin: "20px 0 20px 0" }}
         />
       </div>
-      <LargeCard />
     </>
   );
 };

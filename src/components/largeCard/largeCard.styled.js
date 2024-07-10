@@ -8,6 +8,11 @@ export const StyledLargeCardContainer = styled.div`
   display: flex;
   flex-flow: column;
   margin-left: 10px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    height: 500px;
+    width: 400px;
+  }
 `;
 
 export const StyledUpperContainer = styled.section`
@@ -24,6 +29,11 @@ export const StyledUpperContainer = styled.section`
   justify-content: center;
   align-items: center;
   gap: 24px;
+  position: relative;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    height: 160px;
+  }
 `;
 
 export const StyledBottomContainer = styled.section`
@@ -47,12 +57,17 @@ export const StyledUpperDivOne = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: var(--White-05, rgba(255, 255, 255, 0.05));
   position: relative;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    height: 100px;
+    width: 80px;
+  }
 `;
 
 export const StyledUpperDivOneImage = styled.img`
   height: 100%;
-    width: 100%;
-    border-radius: 12px;
+  width: 100%;
+  border-radius: 12px;
 `;
 
 export const StyledUpperDivTwo = styled.div``;
@@ -63,6 +78,11 @@ export const StyledUpperDivTwoPartOne = styled.article`
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 8px;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    font-size: 18px;
+    line-height: 20px;
+  }
 `;
 
 export const StyledUpperDivTwoPartTwo = styled.article`
@@ -76,6 +96,11 @@ export const StyledUpperDivTwoPartTwo = styled.article`
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    font-size: 13px;
+    line-height: 15px;
+  }
 `;
 
 export const StyledUpperDivTwoPartThree = styled.article`
@@ -98,6 +123,10 @@ export const StyledRewardCountDiv = styled.div`
   align-items: center;
   gap: 4px;
   width: max-content;
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    height: 24px;
+  }
 `;
 
 export const StyledQuestCountDiv = styled.div`
@@ -113,4 +142,16 @@ export const StyledQuestCountDiv = styled.div`
   bottom: 16px;
   left: 50%;
   transform: translate(-50%);
+
+  @media (min-width: 360px) and (max-width: 768px) {
+    padding: 4px 12px;
+  }
+`;
+
+export const StyledIconDiv = styled.div`
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  top: 24px;
+  right: 24px;
 `;
