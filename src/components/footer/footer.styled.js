@@ -21,7 +21,7 @@ export const StyledFooterInnerContainer = styled.main`
   gap: 25px;
 
   @media (min-width: 360px) and (max-width: 1284px) {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 `;
 

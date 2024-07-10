@@ -8,7 +8,9 @@ import {
   StyledInnerCardContainer,
   StyledInnerDivOne,
   StyledInnerDivTwo,
+  StyledTickDiv,
 } from "./innerCard.styled";
+import { TiTick } from "react-icons/ti";
 
 const InnerCard = ({ image, tasks, heading }) => {
   return (
@@ -23,6 +25,9 @@ const InnerCard = ({ image, tasks, heading }) => {
           <StyledDivTwoBottomTwo />
         </StyledDivTwoBottom>
       </StyledInnerDivTwo>
+      <StyledTickDiv>
+        <TiTick />
+      </StyledTickDiv>
     </StyledInnerCardContainer>
   );
 };

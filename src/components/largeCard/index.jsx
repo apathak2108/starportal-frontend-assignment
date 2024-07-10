@@ -11,18 +11,31 @@ import {
   StyledUpperDivOne,
   StyledBottomContainer,
   StyledUpperDivOneImage,
+  StyledIconDiv,
 } from "./largeCard.styled";
-import LargeCardImageOne from "../../assets/body/largeCard1.png";
 import InnerCard from "./innerCard";
 import InnerImageOne from "../../assets/body/innerCard1.png";
 import { RiBitCoinFill } from "react-icons/ri";
+import { PiTriangleDuotone } from "react-icons/pi";
+import InnerImageTwo from "../../assets/body/innerCard2.jpg";
+import InnerImageThree from "../../assets/body/innerCard3.jpg";
+import InnerImageFour from "../../assets/body/innerCard4.jpg";
+import InnerImageFive from "../../assets/body/innerCard5.jpg";
+import InnerImageSix from "../../assets/body/innerCard6.jpg";
+import InnerImageSeven from "../../assets/body/innerCard7.jpg";
+import InnerImageEight from "../../assets/body/innerCard8.jpg";
+import InnerImageNine from "../../assets/body/innerCard9.png";
+import InnerImageTen from "../../assets/body/innerCard10.jpg";
 
-const LargeCard = ({ heading, quests, text, xp }) => {
+const LargeCard = ({ image, heading, quests, text, xp }) => {
   return (
     <StyledLargeCardContainer>
       <StyledUpperContainer>
+        <StyledIconDiv>
+          <PiTriangleDuotone />
+        </StyledIconDiv>
         <StyledUpperDivOne>
-          <StyledUpperDivOneImage src={LargeCardImageOne} />
+          <StyledUpperDivOneImage src={image} />
           <StyledQuestCountDiv>{quests} Quests</StyledQuestCountDiv>
         </StyledUpperDivOne>
         <StyledUpperDivTwo>
@@ -43,28 +56,48 @@ const LargeCard = ({ heading, quests, text, xp }) => {
           tasks="11"
         />
         <InnerCard
-          image={InnerImageOne}
-          heading="#1: But what is crypto and web3?"
+          image={InnerImageTwo}
+          heading="#2: But what is crypto and web3?"
+          tasks="9"
+        />
+        <InnerCard
+          image={InnerImageThree}
+          heading="#3: But what is crypto and web3?"
+          tasks="7"
+        />
+        <InnerCard
+          image={InnerImageFour}
+          heading="#4: But what is crypto and web3?"
           tasks="11"
         />
         <InnerCard
-          image={InnerImageOne}
-          heading="#1: But what is crypto and web3?"
+          image={InnerImageFive}
+          heading="#5: But what is crypto and web3?"
           tasks="11"
         />
         <InnerCard
-          image={InnerImageOne}
-          heading="#1: But what is crypto and web3?"
+          image={InnerImageSix}
+          heading="#6: But what is crypto and web3?"
           tasks="11"
         />
         <InnerCard
-          image={InnerImageOne}
-          heading="#1: But what is crypto and web3?"
+          image={InnerImageSeven}
+          heading="#7: But what is crypto and web3?"
           tasks="11"
         />
         <InnerCard
-          image={InnerImageOne}
-          heading="#1: But what is crypto and web3?"
+          image={InnerImageEight}
+          heading="#8: But what is crypto and web3?"
+          tasks="11"
+        />
+        <InnerCard
+          image={InnerImageNine}
+          heading="#9: But what is crypto and web3?"
+          tasks="11"
+        />
+        <InnerCard
+          image={InnerImageTen}
+          heading="#10: But what is crypto and web3?"
           tasks="11"
         />
       </StyledBottomContainer>
